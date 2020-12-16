@@ -5,3 +5,16 @@
    <button [class.copper]="!inactiveCopper" [disabled]="inactiveCopper" (click)="inactiveCopper = true">Copper</button> <hr>
    <button (click)="reactivate()">Reactivate Buttons</button>
 </div>
+<hr>
+
+<div class="buttons">
+   <h3>Joke {{buttonHeading}}</h3>
+   <div>
+   <button [class.gold]="!inactiveGold" (mouseover)="inactiveGold = true" (mouseout)="!inactiveGold = false">Frustration Incarnate!</button>
+   </div>
+   <hr>
+
+   <div [align]="location" (mouseover)="location = evade(location)">
+   <button class="silver">Catch Me!</button>
+   </div>
+</div>

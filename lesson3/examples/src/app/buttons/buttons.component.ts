@@ -10,6 +10,7 @@ export class ButtonsComponent implements OnInit {
    inactiveGold: boolean = false;
    inactiveSilver: boolean = false;
    inactiveCopper: boolean = false;
+   location: string = "center";
 
 
    constructor() { }
@@ -22,4 +23,11 @@ export class ButtonsComponent implements OnInit {
       this.inactiveCopper = false;
    }
 
+   evade(oldLocation: string) {
+      let possiblePositions = ['left', 'right', 'center'];
+      while (this.location === oldLocation) {
+         this.location = possiblePositions[Math.floor(Math.random()*3)];
+      }
+      return this.location;
+   }
 }
