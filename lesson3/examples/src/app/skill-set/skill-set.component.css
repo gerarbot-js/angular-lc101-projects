@@ -1,3 +1,10 @@
+.ol-style {
+   color: black;
+   text-align: center;
+   list-style-type: upper-roman;
+   list-style-position: inside;
+}
+
 h3 {
    text-align: center;
    text-decoration: underline;
@@ -5,4 +12,9 @@ h3 {
 
 .skills {
    color: green;
+}
+
+.p-style {
+   color: rgb(57, 0, 214);
+   text-align: center;
 }
